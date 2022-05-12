@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-page {
+    background-image: url('../img/main-page-picture.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 630px;
+    padding-top: 140px;
+}
+
+.main-page-box {
+    background-color: rgb(255, 255, 255);
+    width: 557px;
+    height: 355px;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 165px;
+}
+
+.main-page-title {
+    font-family: "Butler";
+    font-weight: 300;
+    font-size: 87px;
+    line-height: 21px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 18px;
+}
+
+.main-page-description {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 21px;
+    line-height: 104px;
+    text-align: center;
+    color: #000000;
+}
