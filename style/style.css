@@ -3,7 +3,7 @@
     src: url('../fonts/Butlerlight.woff2') format('woff2'),
     url('../fonts/Butlerlight.woff') format('woff'),
     url('../fonts/Butlerlight.ttf') format('truetype');
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
 }
 
