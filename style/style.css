@@ -1,8 +1,9 @@
 @font-face {
     font-family: "Butler";
-    src: url('../fonts/Butlerlight.woff2') format('woff2'),
-    url('../fonts/Butlerlight.woff') format('woff'),
-    url('../fonts/Butlerlight.ttf') format('truetype');
+    src: local("Butler"),
+         url('../fonts/Butlerlight.woff2') format('woff2'),
+         url('../fonts/Butlerlight.woff') format('woff'),
+         url('../fonts/Butlerlight.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
@@ -14,31 +15,33 @@
 }
 
 .main-page {
+    display: block;
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
 .main-page-box {
     background-color: rgb(255, 255, 255);
     width: 557px;
     height: 355px;
-    margin: 0 auto;
     padding-top: 120px;
     padding-bottom: 165px;
     position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
 }
 
 .main-page-img {
-    width: 1065px;
-    height: 630px;
-    left: 187px;
-    top: 135px;
+    height: auto;
+    text-align: center;
 }
 
 .main-page-title {
-    font-family: "Butler";
+    font-family: "Butler", sans-serif;
     font-weight: 300;
     font-size: 87px;
     line-height: 104px;
