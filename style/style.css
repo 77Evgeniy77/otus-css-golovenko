@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Butler";
-    src: local("Butler"),
+    src: local('Butler Light'), local('Butler-Light'),
          url('../fonts/Butlerlight.woff2') format('woff2'),
          url('../fonts/Butlerlight.woff') format('woff'),
          url('../fonts/Butlerlight.ttf') format('truetype');
@@ -14,47 +14,66 @@
     box-sizing: border-box;
 }
 
+:root {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+body {
+    background: white;
+    color: #000;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .main-page {
-    display: block;
-    padding: 20px;
     position: relative;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 1500px;
 }
 
 .main-page-box {
     background-color: rgb(255, 255, 255);
-    width: 557px;
-    height: 355px;
-    padding-top: 120px;
-    padding-bottom: 165px;
     position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    font-size: 5.5rem;
+    padding: 1.5em 0.5em;
+    white-space: nowrap;
+    z-index: 1;
 }
 
-.main-page-img {
-    height: auto;
-    text-align: center;
-}
 
 .main-page-title {
     font-family: "Butler", sans-serif;
     font-weight: 300;
-    font-size: 87px;
-    line-height: 104px;
-    text-align: center;
-    color: #000;
+    font-size: 1em;
 }
 
 .main-page-description {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    padding-top: 20px;
-    text-align: center;
-    color: #000000;
+    font-size: 0.21em;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.main-page-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    max-width: 1065px;
+    max-height: 630px;
+    object-fit: cover;
 }
